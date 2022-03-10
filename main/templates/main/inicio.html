@@ -1,0 +1,62 @@
+{% extends "main/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Plasma CNC
+{% endblock %}
+
+{% block content %}
+<main>
+
+    <section class="intro">
+        <h1>¡Bienvenido!</h1>
+        <h4>¡Sabemos que tienes miedos, pero tranquilo... Estamos aquí contigo!</h4>
+        <iframe width="100%" height="315vh" src="https://www.youtube.com/embed/ifmGpY6u2rY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section class="content normal">
+        <div>
+            <div>
+                <h2>¿Quiénes somos?</h2>
+                <p>Somos profesionales en electrónica, apasionados por la ingeniería y con la convicción de que en Colombia se puede producir hardware y software de alta calidad.</p>
+                <h2>Nuestra máquina CNC</h2>
+                <p>
+                    Gracias a la experiencia aprendida desarrollando e instalando mesas de corte plasma
+                    en todo el país con empresas del sector industrial, hemos creado FasterCut 
+                    mejorando problemas evidentes que tienen otras máquinas del mercado.
+                </p>
+
+                <p>
+                    Se buscó fabricar una máquina de alta velocidad para mejorar el corte de espesores
+                    de lámina menores a 2 mm. También se buscó eliminar los tiempos muertos en el
+                    proceso de corte para aumentar la productividad.
+                </p>
+                
+                <a target="_blank" href="https://mantenimiento-industrial-jmo.herokuapp.com/works" class="cuadrolink" >
+                    <div class="cuadrodentro">
+                    Ver nuestra experiencia
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="img-container">
+                <img src="{% static 'img/code.jpeg' %}" alt="paneles pergola">
+            </div>
+        </div>
+    </section>	
+</main>
+
+<div class="btn-whatsapp">   
+    <a href="https://wa.me/573168314501" target="_blank">
+        <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="Whatsapp Mantenimientos" style="width: 60;">
+    </a> 
+</div>
+
+{% endblock %}
+
+{% block script %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/animation.js' %}"></script>
+{% endblock %}

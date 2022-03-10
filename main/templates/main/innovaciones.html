@@ -1,0 +1,156 @@
+{% extends "main/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Plasma CNC
+{% endblock %}
+
+{% block content %}
+<main>
+
+    <section class="intro">
+        <h1>Innovaciones de la FasterCut</h1>
+    </section>
+
+    
+
+    <section class="content normal">
+        
+        <div>
+            <div>
+                <h2>Actualidad del Corte Plasma</h2>
+                <h4>¿Por qué la velocidad es importante?</h4>
+                <p>
+                    Al día de hoy, el reto mas grande de los fabricantes de equipos de corte plasma 
+                    es alcanzar las calidades
+                    del corte laser. El plasma corta
+                    muy bien espesores desde los 2 mm hasta 20 mm (dependiendo del plasma hasta 50 mm)
+                    pero muy pocas máquinas CNC logran hacer cortes de buena
+                    calidad en espesores de lamina de 1 mm debido a su peso y/o baja velocidad.
+                    Para cortar en lamina delgada se necesita menos amperaje de plasma y 
+                    mayores velocidades de corte de la máquina CNC. <a target="_blank" href="https://www.hypertherm.com/es/">Hypertherm</a> 
+                    invierte millones de dólares 
+                    en tecnologías para que la calidad del corte plasma esté cada día más
+                    cerca a la calidad del corte laser y han logrado desarrollos tecnologicos como el
+                    <a target="_blank" href="https://www.hypertherm.com/es/learn/videos/powermax45-xp-mechanized-cutting-with-finecut---2.7mm-mild-steel/">FineCut</a>
+                    y otras que se han implementado en máquinas más grandes y modernas como la
+                    <a target="_blank" href="https://www.hypertherm.com/es/learn/videos/xpr300-overview/">XPR300</a>.
+                </p>
+                <p>
+                    Sin embargo, la tecnología FineCut no puede estar sola, se requiere de una buena máquina
+                    CNC para alcanzar las velocidades que se observan en las tablas de los consumibles FineCut, 
+                    velocidades de hasta 8250 mm/min (ver tabla). Debido a lo anterior, nuestra 
+                    máquina se diseñó 
+                    pensando en las altas velocidades que la tecnología FineCut demanda, 
+                    nuestro pórtico es liviano y los motores que lo mueven son de muy buena potencia.
+                </p>
+                <p>
+                    Por experiencia, aun las industrias que realizan cortes en laminas gruesas y que 
+                    dicen no necesitar cortes en espesores delgados, eventualmente, los requieren en
+                    algun momento de su producción y/o
+                    se les abren las posibilidades de corte y así tambien cambian, mejoran y/o amplian su 
+                    portafolio de productos. Por lo que siempre se recomienda contar con una buena
+                    máquina que cubra el corte en la mayor cantidad de espesores de lamina.
+                </p>
+                
+                
+                <a target="_blank" href="https://www.hypertherm.com/es/" class="cuadrolink" >
+                    <div class="cuadrodentro">
+                    Ver pagina Hypertherm
+                    </div>
+                </a>
+            </div>
+        </div>		
+        <div>
+            <div class="img-container">
+                <img src="{% static 'img/tablas.JPG' %}" alt="calicivita solar decathlon">
+            </div>
+        </div>	
+    </section>
+
+    <section class="content reverse">
+        <div class="img-content">
+            <div class="img-container">
+                <img src="{% static 'img/plasmacnc.jpg' %}" alt="plasma hypertherm">
+            </div>
+        </div>	
+        <div>
+            <div>
+                <h2>Pórtico Liviano (Gantry Liviano)</h2>
+
+                <p>
+                    Otra ventaja de la alta velocidad es la alta productividad. Muchas industrias que 
+                    no tienen la máquina CNC adecuada y cortan espesores de lámina de 2 mm a 3000 mm/min
+                    encontraran al final del mes una factura de energía mas alta debido a que el plasma y
+                    el compresor consumen una energia considerable. Al ser más lento el 
+                    corte, la produccion de piezas tambien sería proporcionalmente mas lento (Ej: Un trabajo que
+                    normalmente se demore 4 dias, podria tardarse 5 o 6).
+                </p>
+    
+                <a target="_blank" href="https://mantenimiento-industrial-jmo.herokuapp.com/works" class="cuadrolink" >
+                    <div class="cuadrodentro">
+                    Ver trabajos realizados
+                    </div>
+                </a>
+            </div>
+        </div>
+        	
+    </section>
+
+    <section class="content normal">
+        
+        <div>
+            <div>
+                <h2>Nuestro Sensor de Altura</h2>
+                <p>
+                    Nuestro sensor de altura es un desarrollo propio, fue una de las cosas que era muy 
+                    evidente que se debía mejorar en las máquinas que se instalaron. Los sensores 
+                    comerciales vienen con un sistema de potenciómetros analógicos que están instalados en
+                    el sensor de altura junto con gran parte de la electrónica, en donde reciben calor y 
+                    humo de la antorcha de plasma. Además, si el operario desea corregir la altura, debe 
+                    “perseguir” la antorcha para corregir su altura.
+                </p>
+
+                <p>
+                    Para mejorar estos problemas se diseñó
+                    un sensor de altura digital con un microcontrolador moderno de dos núcleos (dual Core) 
+                    y una pantalla LCD para visualizar los estados y configuraciones. El sensor se diseñó
+                    para evitar los tiempos muertos de subida de la antorcha y sensado de lamina
+                    para aumentar la productividad de la máquina. Además cuenta con un 
+                    sistema de control de posición que le permite reducir la velocidad del motor cada vez se
+                    va a alcanzar algún limite o final de carrera.
+                </p>               
+                
+            </div>
+        </div>	
+        <div class="img-content">
+            <div class="img-container">
+                <img src="{% static 'img/sensor.jpg' %}" alt="plasma hypertherm">
+            </div>
+        </div>		
+    </section>
+
+    <section class="content reverse">
+        <div>
+            <div class="img-container">
+                <img src="{% static 'img/motores.JPG' %}" alt="calicivita solar decathlon">
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Motores Paso a Paso</h2>
+                <p>Utilizamos los motores paso a paso mas potentes que pudimos, marca CLOUDRAY, Nema 24. 
+                    Normalmente en las máquinas de formato 4x8 se usan motores paso a paso de 3 amperios y
+                    2.2 Nm, sin embargo en nuestra máquina utilizamos motores de 5 amperios y 4 Nm.</p>
+                
+            </div>
+        </div>
+        
+        
+    </section>
+
+    
+</main>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>
+    {% block title %}
+	    Plasma CNC
+    {% endblock %}
+    </title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+	<link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<a href="/">Vasecto-Mia</a>
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<a href="/" class="sombrear">Inicio</a>
+				<a href="/inscripcion" class="sombrear">¿Como inscribirse?</a>
+				<a href="/contacto" class="sombrear">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+{% block content %}
+
+{% endblock %}
+
+<footer>
+	<div>
+		<p>Cel: (+57) 3168314501<br>E-mail: juan.oviedo.lutkens@gmail.com<br>¡Sigueme! &copy; 2022</p>
+		<div>
+			<a target="_blank" class="icon-facebook-squared" href="https://www.facebook.com/juan.m.oviedo/"></a>
+			<a target="_blank" class="icon-instagram" href="https://www.instagram.com/juan.m.oviedo/"></a>
+		</div>
+	</div>
+</footer>
+
+{% block script %}
+
+{% endblock %}
+</body>
+</html>
